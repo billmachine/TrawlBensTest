@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.TrawlBensTest" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/purple_700</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -13,6 +13,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- splash -->
+    <style name="SplashStyle" parent="Theme.TrawlBensTest">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <!-- splash -->
 
     <!-- toolbar -->
     <style name="ToolBarStyle" parent="ToolBarStyle.Base"/>
@@ -30,5 +37,19 @@
 <!--        <item name="android:textSize">@dimen/event_title_text_size</item>-->
     </style>
     <!-- toolbar -->
+
+    <!-- checkbox -->
+    <style name="MyCheckBox" parent="Theme.TrawlBensTest">
+        <!--<item name="colorPrimary">@color/blue</item>-->
+        <!--<item name="colorPrimaryDark">@color/blue</item>-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark
+        </item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/colorPrimaryDark
+        </item> <!-- activated color change as you wish -->
+        <item name="android:textColor">@color/colorPrimaryDark</item> <!-- checkbox text color -->
+    </style>
+    <!-- checkbox -->
+
 
 </resources>

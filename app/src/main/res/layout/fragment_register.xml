@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout  android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal|top"
+                    android:alpha=".94">
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha=".8"
+                        android:elevation="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="40dp"
+                        android:paddingBottom="40dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"/>
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/metro_medium"
+                            android:padding="5dp"
+                            android:text="Register"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metro_bold"
+                            android:text="@string/info"
+                            android:textColor="@color/md_grey500" android:textSize="12sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metro_bold"
+                            android:padding="5dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Isikan Username"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <com.example.trawlbenstest.extension.BorderedTextInputLayout
+                            android:id="@+id/til_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false"
+                            app:startIconDrawable="@drawable/ic_avatar"
+                            app:startIconTint="@color/colorPrimary"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:boxStrokeColor="#FFF"
+                            app:boxBackgroundColor="#FFF">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_textinputedittext_rounded"
+                                android:digits="0123456789'., abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:hint="Username"
+                                android:inputType="text"
+                                android:text=""
+                                android:padding="10dp"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="14sp" />
+                        </com.example.trawlbenstest.extension.BorderedTextInputLayout>
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metro_bold"
+                            android:padding="5dp"
+                            android:text="Isikan Password"
+                            android:textSize="12sp" android:textStyle="bold"/>
+
+                        <com.example.trawlbenstest.extension.BorderedTextInputLayout
+                            android:id="@+id/til_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true"
+                            app:startIconDrawable="@drawable/ic_padlock"
+                            app:startIconTint="@color/colorPrimary"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:boxStrokeColor="#FFF"
+                            app:boxBackgroundColor="#FFF">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_textinputedittext_rounded"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:padding="10dp"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="14sp" />
+                        </com.example.trawlbenstest.extension.BorderedTextInputLayout>
+
+                        <com.example.trawlbenstest.extension.BorderedTextInputLayout
+                            android:id="@+id/til_repassword"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true"
+                            app:startIconDrawable="@drawable/ic_padlock"
+                            app:startIconTint="@color/colorPrimary"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:boxStrokeColor="#FFF"
+                            app:boxBackgroundColor="#FFF"
+                            >
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_repassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_textinputedittext_rounded"
+                                android:hint="Ulangi Password"
+                                android:inputType="textPassword"
+                                android:padding="10dp"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="14sp" />
+                        </com.example.trawlbenstest.extension.BorderedTextInputLayout>
+
+                        <CheckBox
+                            android:id="@+id/cb_persyaratan"
+                            style="@style/MyCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top"
+                            android:padding="5dp"
+                            android:text="Saya Menyetujui Persyaratan &amp; Ketentuan yang berlaku mengenai pajak yang tercantum dalam undang-undang yang telah ditetapkan oleh Pemerintah Daerah"
+                            />
+                        <Button
+                            android:id="@+id/btn_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Next"
+                            android:textAllCaps="false" android:textColor="#FFF"/>
+
+                        <TextView
+                            android:id="@+id/textWait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/metro_medium"
+                            android:text="Tunggu Sebentar....."
+                            android:visibility="gone"/>
+
+                        <ProgressBar
+                            android:id="@+id/loadingLogin"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:indeterminate="true"
+                            android:indeterminateTint="@color/colorPrimary"
+                            android:indeterminateTintMode="src_atop"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+</FrameLayout>
+    </layout>
+

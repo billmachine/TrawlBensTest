@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+
+    <item android:drawable="@drawable/bg_gradient"/>
+
+    <item
+        android:top="2340dp"
+        android:bottom="2340dp"
+
+        android:left="1080dp"
+        android:right="1080dp">
+
+        <bitmap
+            android:src="@drawable/ic_logo_white"
+            android:gravity="center" />
+
+
+    </item>
+</layer-list>
